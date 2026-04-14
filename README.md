@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-# resume-screener-ai
-=======
 # TalentPulse AI: Smart Resume Screener
 
 An AI-powered recruitment assistant that screens multiple resumes against a job description, provides a ranked leaderboard, and offers an interactive chat to query candidate data.
 
-![TalentPulse AI Demo](https://raw.githubusercontent.com/username/project/main/demo-placeholder.png)
-
 ## 🚀 Live Demo
-- **Frontend**: [Vercel Deployment URL]
-- **Backend**: [Render Deployment URL]
+- **Frontend (Live Site)**: [https://resume-screener-ai-two.vercel.app/](https://resume-screener-ai-two.vercel.app/)
+- **GitHub Repository**: [https://github.com/lakhandavda/resume-screener-ai](https://github.com/lakhandavda/resume-screener-ai)
 
 ## ✨ Features
 - **Batch Processing**: Upload multiple PDF resumes simultaneously.
@@ -64,19 +59,13 @@ npm run dev
 ## 🌍 Deployment
 
 ### Backend (Render)
-1. New -> Web Service.
-2. Build Command: `pip install -r requirements.txt`
-3. Start Command: `python main.py`
-4. Environment Variables:
-   - `GEMINI_API_KEY`: [Your Key]
-   - `PORT`: 10000 (Render sets this automatically)
+1. Use the [render.yaml](render.yaml) blueprint for a one-click setup.
+2. In the Render Dashboard, add your `GEMINI_API_KEY` under Environment Variables.
 
 ### Frontend (Vercel)
-1. New Project -> Import from GitHub.
-2. Build Command: `npm run build`
-3. Output Directory: `dist`
-4. Environment Variables:
-   - `VITE_API_URL`: [Your Render Backend URL]
+1. Import the repository into Vercel.
+2. Set the `ROOT_DIRECTORY` to `frontend`.
+3. Add the environment variable `VITE_API_URL` pointing to your Render backend URL.
 
 ## ⚠️ Known Limitations
 - **Gemini Free Quota**: The free tier has rate limits. The app includes a 1-second delay between screenings and exponential backoff retry logic to mitigate this.
@@ -84,5 +73,4 @@ npm run dev
 - **PDF Extraction**: Complex multi-column PDF layouts might occasionally cause extraction artifacts.
 
 ---
-Built for the **Resume Screener AI** Hiring Assignment.
->>>>>>> b2af4ea (Initial commit: AI Resume Screener with FastAPI and React)
+Built for the **Resume Screener AI** Hiring Assignment for **DevLane**.
